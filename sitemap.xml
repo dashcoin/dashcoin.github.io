@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://dashcoin.net/news/2014/06/21/dashcoin-released/</loc>
+        <lastmod>2014-06-21T01:28:20+03:00</lastmod>
+    </url>
+    <url>
         <loc>http://dashcoin.net/404.html</loc>
         <lastmod>2014-06-20T16:23:01+03:00</lastmod>
     </url>
     <url>
         <loc>http://dashcoin.net/blog/archives/</loc>
-        <lastmod>2014-06-20T19:01:18+03:00</lastmod>
+        <lastmod>2014-06-21T01:28:20+03:00</lastmod>
     </url>
     <url>
         <loc>http://dashcoin.net/download/</loc>
@@ -18,7 +22,7 @@
     </url>
     <url>
         <loc>http://dashcoin.net/news/</loc>
-        <lastmod>2014-06-20T16:23:02+03:00</lastmod>
+        <lastmod>2014-06-21T01:28:20+03:00</lastmod>
     </url>
     <url>
         <loc>http://dashcoin.net/robots.txt</loc>
