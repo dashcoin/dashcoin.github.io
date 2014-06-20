@@ -12,4 +12,8 @@
         <loc>http://dashcoin.net/robots.txt</loc>
         <lastmod>2014-06-20T16:23:01+03:00</lastmod>
     </url>
+    <url>
+        <loc>http://dashcoin.net/services/</loc>
+        <lastmod>2014-06-20T17:22:31+03:00</lastmod>
+    </url>
 </urlset>
