@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://dashcoin.github.io/atom.xml" rel="self"/>
-  <link href="http://dashcoin.github.io/"/>
-  <updated>2014-06-20T16:52:33+03:00</updated>
-  <id>http://dashcoin.github.io/</id>
+  <title><![CDATA[Dashcoin]]></title>
+  <link href="http://dashcoin.net/atom.xml" rel="self"/>
+  <link href="http://dashcoin.net/"/>
+  <updated>2014-06-20T17:02:21+03:00</updated>
+  <id>http://dashcoin.net/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Dashcoin]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
