@@ -5,8 +5,16 @@
         <lastmod>2014-06-20T16:23:01+03:00</lastmod>
     </url>
     <url>
+        <loc>http://dashcoin.net/downloads/</loc>
+        <lastmod>2014-06-20T17:58:47+03:00</lastmod>
+    </url>
+    <url>
         <loc>http://dashcoin.net/</loc>
         <lastmod>2014-06-20T16:23:02+03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://dashcoin.net/news/</loc>
+        <lastmod>2014-06-20T18:02:52+03:00</lastmod>
     </url>
     <url>
         <loc>http://dashcoin.net/robots.txt</loc>
@@ -14,6 +22,6 @@
     </url>
     <url>
         <loc>http://dashcoin.net/services/</loc>
-        <lastmod>2014-06-20T17:57:59+03:00</lastmod>
+        <lastmod>2014-06-20T17:58:47+03:00</lastmod>
     </url>
 </urlset>
