@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Dashcoin - Download Windows binaries</title>
+    <base href="http://dashcoin.net/">
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">     
+    <link rel="stylesheet" href="assets/plugins/bxslider/jquery.bxslider.css">     
+    <link rel="stylesheet" href="assets/plugins/horizontal-parallax/css/horizontal-parallax.css">
+
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="assets/css/themes/dark-blue.css" id="style_color">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Fav icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/favicons/apple-touch-icon-152x152-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/favicons/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicons/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicons/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/favicons/apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.png" />
+    <link rel="icon" type="image/ico" href="/assets/img/favicons/favicon.ico" />
+</head>	
+
+<body>
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+
+            </div>
+        </div>
+        <!-- End Topbar -->
+    
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <p class="sr-only">Toggle navigation</p>
+                        <p class="fa fa-bars"></p>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/logo.png" alt="Logo" width="175" height="39">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                        <li class="active">
+                            <a href="javascript:void(0);">
+                                Home
+                            </a>
+                        </li>
+                        <!-- End Home -->
+                        <!-- Download -->
+                        <li>
+                            <a href="#download">
+                                Download
+                            </a>
+                        </li>
+                        <!-- End Download -->
+                        <!-- Community -->
+                        <li>
+                            <a href="#community">
+                                Community
+                            </a>
+                        </li>
+                        <!-- End Community -->
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header ===-->    
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Download for Windows</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Download for Windows</li>
+            </ul>
+        </div><!--/container-->
+    </div>
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Purchase Block ===-->
+    <div class="purchase">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 animated fadeInLeft">
+
+  <h2 class="margin-top-30">
+    <a id="section2" class="nolink">General overview</a>
+  </h2>
+  
+  <p>Dashcoin works through 2 separate binary files operated through command line: </p>
+  <p>
+    1. 
+    <b>dashcoind.exe</b>
+     – daemon to synchronize the block chain and mine dashcoins.
+  </p>
+  <p>
+    2. 
+    <b>simplewallet.exe</b>
+     – wallet to receive and send funds.
+  </p>
+  <h2 class="margin-top-30">
+    <a class="nolink">Usage guidelines</a>
+  </h2>
+  <ul>
+  <li class="spec-li">
+    Make sure that dashcoind.exe is running and synced 
+    <b>when you start simplewallet.exe</b>
+    .
+  </li>
+  <li class="spec-li">
+    <b>Always use "exit" command</b>
+     to terminate both dashcoind.exe and simplewallet.exe to save current synchronization progress.
+  </li>
+  </ul>
+  <h2 class="margin-top-30">
+    <a id="section1" class="nolink">Install &amp; Launch Dashcoin</a>
+  </h2>
+  <p>1. Unzip the archive.</p>
+  <p>2. Launch "run.bat".</p>
+  <p>It will place the block chain to the proper location (<b>C:\Users\%user_name%\AppData\Roaming\dashcoin\</b>
+), launch the daemon, and open your wallet.</p>
+  <p>Next time you launch "run.bat" it will just open daemon and wallet.</p>
+  <h2 class="margin-top-30">
+    <a class="nolink">Daemon: synchronization &amp; mining</a>
+  </h2>
+  <p>After dashcoind.exe is launched you will have to wait until it is synchronized with the network. You will be notified with several green "SYNCHRONIZED OK" messages.</p>
+  <p>
+    Here are the most important daemon commands:
+    <br>
+  </p>
+  <div class="tag-box tag-box-v3 margin-bottom-5">
+    <p>
+      <table>
+        <tbody>
+          <tr>
+            <td width="300">start_mining &lt;wallet_address> [threads=1]</td>
+            <td>Start mining in several threads to a given wallet address</td>
+          </tr>
+          <tr>
+            <td>stop_mining</td>
+            <td>Stop mining</td>
+          </tr>
+          <tr>
+            <td>show_hr</td>
+            <td>Show current mining hashrate</td>
+          </tr>
+          <tr>
+            <td>hide_hr</td>
+            <td>Stop showing current mining hashrate</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Show all daemon commands</td>
+          </tr>
+          <tr>
+            <td>save</td>
+            <td>Save block chain synchronization progress</td>
+          </tr>
+          <tr>
+            <td>exit</td>
+            <td>Save block chain and exit dashcoind</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  </div>
+  <p></p>
+  <h2 class="margin-top-30">
+    <a class="nolink">Wallet: send and receive payments</a>
+  </h2>
+  <p>Simplewallet.exe can only be used after the daemon is launched and synchronized.</p>
+  <p>
+    Here are the most important wallet commands:
+    <br>
+  </p>
+  <div class="tag-box tag-box-v3 margin-bottom-5">
+    <p>
+      <table>
+        <tbody>
+          <tr>
+            <td width="300">address</td>
+            <td>Show your wallet address</td>
+          </tr>
+          <tr>
+            <td>refresh</td>
+            <td>Refresh your wallet balance</td>
+          </tr>
+          <tr>
+            <td>transfer &lt;mixin_count> &lt;address> &lt;amount></td>
+            <td>Send money to &lt;address> with a mixing degree of &lt;mixin_count></td>
+          </tr>
+          <tr>
+            <td>start_mining &lt;threads></td>
+            <td>Start mining in daemon with several threads to the current wallet address</td>
+          </tr>
+          <tr>
+            <td>stop_mining</td>
+            <td>Stop mining in daemon</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Show all wallet commands</td>
+          </tr>
+          <tr>
+            <td>exit</td>
+            <td>Exit simplewallet</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  </div>
+<!-- end tab 1 -->
+</div>
+<div class="redtabs_cont redtabs_cont2 hidden">
+<!-- tab 2 -->
+<a href="https://sourceforge.net/projects/dashcoin-bcn/files/dashcoin-windows.zip/download" class="bigdownload bd_bi" target="_blank">Download Binaries</a>
+  <h2 class="margin-top-30">
+    <a class="nolink">General overview</a>
+  </h2>
+  <p>Dashcoin works through 2 separate binary files operated through command line: </p>
+  <p>
+    1. 
+    <b>dashcoind.exe</b>
+     – daemon to synchronize the block chain and mine dashcoins.
+  </p>
+  <p>
+    2. 
+    <b>simplewallet.exe</b>
+     – wallet to receive and send funds.
+  </p>
+  <h2 class="margin-top-30">
+    <a class="nolink">Usage guidelines</a>
+  </h2>
+  <ul>
+  <li class="spec-li">
+    Make sure that dashcoind.exe is running and synced 
+    <b>when you start simplewallet.exe</b>
+    .
+  </li>
+  <li class="spec-li">
+    <b>Always use "exit" command</b>
+     to terminate both dashcoind.exe and simplewallet.exe to save current synchronization progress.
+  </li>
+  </ul>
+
+  <h2 class="margin-top-30">
+    <a class="nolink">Install Dashcoin</a>
+  </h2>
+  <p>1. Unzip the archive to one separate folder</p>
+  <p>
+    2. Download block chain archive and unpack it to <b>C:\Users\%user_name%\AppData\Roaming\dashcoin\</b>
+  </p>
+  <h2 class="margin-top-30">
+    <a class="nolink">Launch Dashcoin</a>
+  </h2>
+  <p>1. Open dashcoind.exe</p>
+  <p>2. Wait until dashcoind is synchronized. You will be notified with several green "SYNCHRONIZED OK" messages.</p>
+  <p>3. Open simplewallet.exe and enter your wallet's name and address. If the wallet doesn't exist, it will be created automatically.</p>
+  <h2 class="margin-top-30">
+    <a class="nolink">Daemon: synchronization &amp; mining</a>
+  </h2>
+  <p>After dashcoind.exe is launched you will have to wait until it is synchronized with the network. You will be notified with several green "SYNCHRONIZED OK" messages.</p>
+  <p>
+    Here are the most important daemon commands:
+    <br>
+  </p>
+  <div class="tag-box tag-box-v3 margin-bottom-5">
+    <p>
+      <table>
+        <tbody>
+          <tr>
+            <td width="300">start_mining &lt;wallet_address> [threads=1]</td>
+            <td>Start mining in several threads to a given wallet address</td>
+          </tr>
+          <tr>
+            <td>stop_mining</td>
+            <td>Stop mining</td>
+          </tr>
+          <tr>
+            <td>show_hr</td>
+            <td>Show current mining hashrate</td>
+          </tr>
+          <tr>
+            <td>hide_hr</td>
+            <td>Stop showing current mining hashrate</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Show all daemon commands</td>
+          </tr>
+          <tr>
+            <td>save</td>
+            <td>Save block chain synchronization progress</td>
+          </tr>
+          <tr>
+            <td>exit</td>
+            <td>Save block chain and exit dashcoind</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  </div>
+  <p></p>
+  <h2 class="margin-top-30">
+    <a class="nolink">Wallet: send &amp; receive payments</a>
+  </h2>
+  <p>Simplewallet.exe can only be used after the daemon is launched and synchronized.</p>
+  <p>
+    Here are the most important wallet commands:
+    <br>
+  </p>
+  <div class="tag-box tag-box-v3 margin-bottom-5">
+    <p>
+      <table>
+        <tbody>
+          <tr>
+            <td width="300">address</td>
+            <td>Show your wallet address</td>
+          </tr>
+          <tr>
+            <td>refresh</td>
+            <td>Refresh your wallet balance</td>
+          </tr>
+          <tr>
+            <td>transfer &lt;mixin_count> &lt;address> &lt;amount></td>
+            <td>Send money to &lt;address> with a mixing degree of &lt;mixin_count></td>
+          </tr>
+          <tr>
+            <td>start_mining &lt;threads></td>
+            <td>Start mining in daemon with several threads to the current wallet address</td>
+          </tr>
+          <tr>
+            <td>stop_mining</td>
+            <td>Stop mining in daemon</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Show all wallet commands</td>
+          </tr>
+          <tr>
+            <td>exit</td>
+            <td>Exit simplewallet</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  </div>
+
+                </div>            
+                <div class="col-md-3 btn-buy animated fadeInRight">
+                    <a href="#download" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Download Binaries</a>
+                </div>
+            </div>
+        </div>
+    </div><!--/row-->
+    <!-- End Purchase Block -->
+
+
+<!-- end content -->
+
+
+    <!--=== Footer ===-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 md-margin-bottom-40" id="community">
+                    <!-- Community -->
+                    <div class="headline"><h2 class="margin-top-30">Community</h2></div>  
+                    <p class="margin-bottom-25 md-margin-bottom-40">
+                    <a href="#"><i class="fa fa-bitcoin"></i> Bitcointalks</a> <br />
+                    <a href="#"><i class="fa fa-reddit"></i> Reddit</a> <br />
+
+                    <a href="https://github.com/dashcoin/dashcoin/issues"><i class="fa fa-bug"></i> Report a bug</a> <br />
+                    </p>    
+                    <!-- End Community -->
+                </div><!--/col-md-4-->  
+                
+                <div class="col-md-4 md-margin-bottom-40">
+                    <!-- Resources -->
+                    <div class="headline"><h2 class="margin-top-30">Resources</h2></div>  
+                    <p class="margin-bottom-25 md-margin-bottom-40">
+                    <a href="#"><i class="fa fa-info"></i> Dashcoin Wiki</a> <br />
+                    <a href="https://github.com/dashcoin/dashcoin"><i class="fa fa-github"></i> GitHub</a> <br />
+                    </p>    
+                    <!-- End Resources -->                    
+                </div><!--/col-md-4-->
+
+                <div class="col-md-4">
+                    <!-- Donate -->
+                    <div class="headline"><h2 class="margin-top-30">Donate</h2></div> 
+                    <address class="md-margin-bottom-40">
+                        Donate for development:<br />
+                        NOADDRESS
+                    </address>
+                    <!-- End Donate -->
+                </div><!--/col-md-4-->
+            </div>
+        </div> 
+    </div><!--/footer-->
+    <!--=== End Footer ===-->
+
+    <!--=== Copyright ===-->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">                     
+                    <p>
+                        2014 &copy; Dashcoin
+                    </p>
+                </div>
+                <div class="col-md-6">  
+
+                </div>
+            </div>
+        </div> 
+    </div><!--/copyright--> 
+    <!--=== End Copyright ===-->
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->			
+<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="assets/plugins/horizontal-parallax/js/sequence.jquery-min.js"></script>
+<script type="text/javascript" src="assets/plugins/horizontal-parallax/js/horizontal-parallax.js"></script>
+<script type="text/javascript" src="assets/plugins/bxslider/jquery.bxslider.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/index.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+      	App.init();
+        App.initSliders();
+        Index.initParallaxSlider();        
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>	
