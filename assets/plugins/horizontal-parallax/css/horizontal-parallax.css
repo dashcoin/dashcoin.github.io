@@ -183,7 +183,7 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
 }
 #sequence-theme .aeroplane {
   left: -50%;
-  max-width: 40%;
+  max-width: 100%;
   top: 800px;
   z-index: 6;
   -webkit-transition-property: left top;
