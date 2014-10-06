@@ -69,7 +69,7 @@
                 <div class="collapse navbar-collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
                         <!-- Home -->
-                        <li class="active">
+                        <li>
                             <a href="javascript:void(0);">
                                 Home
                             </a>
@@ -83,7 +83,7 @@
                         </li>
                         <!-- End Download -->
                         <!-- FAQ -->
-                        <li>
+                        <li class="active">
                             <a href="/faq/">
                                 FAQ
                             </a>
@@ -145,10 +145,10 @@
     <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">Download for Linux</h1>
+            <h1 class="pull-left">Frequently Asked Questions</h1>
             <ul class="pull-right breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li class="active">Download for Linux</li>
+                <li class="active">FAQ</li>
             </ul>
         </div><!--/container-->
     </div>
@@ -160,80 +160,27 @@
             <div class="row">
                 <div class="col-md-9 animated fadeInLeft">
 
-
-<h2 class="margin-top-30"><a class="nolink">General overview</a></h2>
-<a href="http://sourceforge.net/projects/dashcoin/files/dashcoin-linux.tar.gz/download" class="bigdownload bd_bi" target="_blank">Download Binaries</a>
-<p>Dashcoin works through 2 separate binary files operated through command line: </p>
-<p>1. <b>dashcoind</b>&nbsp;– daemon to synchronize the block chain and mine dashcoins.</p>
-<p>2. <b>simplewallet</b> – wallet to receive and send funds.</p>
-
-<h2 class="margin-top-30"><a class="nolink">Usage guidelines</a></h2>
-<ul>
-<li class="spec-li">Make sure that dashcoind is running and synced <b>when you start simplewallet</b>.</li>
-<li class="spec-li"><b>Always use "exit" command</b> to terminate both dashcoind and simplewallet to save current synchronization progress.</li>
-</ul>
-<h2 class="margin-top-30"><a class="nolink">Install Dashcoin</a></h2>
-
-  <p>1. Unzip the archive to one separate folder</p>
-  <p>
-    2. Download block chain archive and unpack it to <b>~/.dashcoin/</b>  - <a href="https://mega.co.nz/#!pJRFzaaR!EgvYzbvFplIr4MhGMaLtVlQMY5DVeg4EfYbVN-7j9pM" target="_blank">Download block chain</a>
-  </p>
-
-<h2 class="margin-top-30"><a class="nolink">Launch Dashcoin</a></h2>
-
-<p>1. Open dashcoind<br>
-</p>
-<div class="tag-box tag-box-v3 margin-bottom-5">
-<p>./dashcoind</p>
-
-</div>
-<p></p>
-<p>2. Wait until dashcoind is synchronized. You will be notified with several green "SYNCHRONIZED OK" messages.</p>
-<p>3. Open simplewallet and enter your wallet's name and address. If the wallet doesn't exist, it will be created automatically.</p>
-<div class="tag-box tag-box-v3 margin-bottom-5">
-<p>./simplewallet</p>
-
-</div>
-
-
-<h2 class="margin-top-30"><a class="nolink">Daemon: synchronization &amp; mining</a></h2>
-<p>After dashcoind is launched you will have to wait until it is synchronized with the network. You will be notified with several green "SYNCHRONIZED OK" messages.</p>
-<p>Here are the most important daemon commands:</p>
-<div class="tag-box tag-box-v3 margin-bottom-5">
 <p>
-<table>
-    <tbody><tr><td width="300">start_mining &lt;wallet_address&gt; [threads=1]</td><td>Start mining in several threads to a given wallet address</td></tr>
-    <tr><td>stop_mining</td><td>Stop mining</td></tr>
-    <tr><td>show_hr</td><td>Show current mining hashrate</td></tr>
-    <tr><td>hide_hr</td><td>Stop showing current mining hashrate</td></tr>
-    <tr><td>help</td><td>Show all daemon commands</td></tr>
-    <tr><td>save</td><td>Save block chain synchronization progress</td></tr>
-    <tr><td>exit</td><td>Save block chain and exit dashcoind</td></tr>
-</tbody></table>
+<h2 class="margin-top-30"><a class="nolink">Why is my transaction too large?</a></h2> 
+To prove you have the money to spend in the transaction, the transaction must reference the Dashcoin sent to you.  These transactions to you are called inputs.  So, if someone sends you 10 batches of 100 Dashcoin, then you have 1000 Dashcoin, and 10 inputs.  The more unused inputs you have, the larger the transactions.  How can you decrease the number of unused inputs you have?  You can send transactions to yourself.  So, if you have 10 inputs totaling 1000 DSH, and you send 1000 DSH to yourself, those 10 get used up, and now you only have 1 input: the transaction to yourself.
 </p>
-</div>
 
-<h2 class="margin-top-30"><a  class="nolink">Wallet: send &amp; receive payments</a></h2>
-<p>Simplewallet can only be used after the daemon is launched and synchronized.</p>
-<p>Here are the most important wallet commands:</p>
-<div class="tag-box tag-box-v3 margin-bottom-5">
 <p>
-<table>
-    <tbody><tr><td width="300">address</td><td>Show your wallet address</td></tr>
-    <tr><td>refresh</td><td>Refresh your wallet balance</td></tr>
-    <tr><td>transfer &lt;mixin_count&gt; &lt;address&gt; &lt;amount&gt;</td><td>Send money to &lt;address&gt; with a mixing degree of &lt;mixin_count&gt;</td></tr>
-    <tr><td>start_mining &lt;threads&gt;</td><td>Start mining in daemon with several threads to the current wallet address</td></tr>
-    <tr><td>stop_mining</td><td>Stop mining in daemon</td></tr>
-    <tr><td>help</td><td>Show all wallet commands</td></tr>
-    <tr><td>exit</td><td>Exit simplewallet</td></tr>
-</tbody></table>
-</p>
-</div>
+<h2 class="margin-top-30"><a class="nolink">My transaction says sent, but it never showed up.</a></h2> 
+This happens when your transaction was rejected by the rest of the network.  To know for sure if it was rejected by the network, you can search Dashcoin's block explorer on Minergate for the transaction id.  If it does not show up, then it was rejected.  Your coins are not lost, however, and can be recovered by waiting 24 hours, and then running the "reset" command in simplewallet.  Alternatively you can resync the blockchain by deleting or renaming ~/.dashcoin on unix, or %appdata%/Roaming/dashcoin on Windows.
+To help prevent this in the future, you can decrease the mixin amount, and increase the fee to 15 DSH or higher.
+</p> 
 
+<p>
+<h2 class="margin-top-30"><a class="nolink">What is a payment id?</a></h2> 
+Due to Dashcoin's anonymous structure, it is not possible for exchanges to identify who made a deposit.  To solve this, payment ids are used.  An exchange can give you a unique payment id, which you include in a transaction with the -p parameter.  This allows the exchange to identify who sent them the deposit.
+</p>
+
+<p>
+<h2 class="margin-top-30"><a class="nolink">I forgot to include my payment id when sending a deposit to an exchange</a></h2> 
+Email support for whichever exchange you sent the coins to.  Include the transaction id in the email.  If you do not know the transaction id, you can check simplewallet.log or you can search through the blockchain explorer around the time you sent the transaction for the transaction.
+</p>
                 </div>            
-                <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="http://sourceforge.net/projects/dashcoin/files/dashcoin-linux.tar.gz/download" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Download Binaries</a>
-                </div>
             </div>
         </div>
     </div><!--/row-->
