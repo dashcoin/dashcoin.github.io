@@ -99,6 +99,7 @@
                             </ul>
                         </li>
 
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 Mining
@@ -107,18 +108,19 @@
                                 <li class="dropdown-submenu">
                                     <a href="#">Pools</a>
                                     <ul class="dropdown-menu">
+                                        <li><a href="https://minergate.com/a/581ea2146b909f36">Minergate</a></li>
                                         <li><a href="http://dsh.extremepool.org/">Extremepool</a></li>
                                         <li><a href="http://dsh.coinmine.pl">Coinmine.pl</a></li>
                                         <li><a href="http://dashcoin.xminingpool.com/">Xminingpool</a></li>
                                         <li><a href="http://dsh.shscrypto.net">Shscrypto</a></li>
+                                        <li><a href="http://dash.8pool.dtdns.net">8pool</a></li>
                                         <li><a href="http://dsh.democats.org/">Democats</a></li>
-                                        <li><a href="https://minergate.com/a/581ea2146b909f36">Minergate</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a href="#">Blockchain explorers</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="hhttps://minergate.com/blockchain/dsh/blocks">Minergate</a></li>
+                                        <li><a href="https://minergate.com/blockchain/dsh/blocks">Minergate</a></li>
                                         <li><a href="http://chainradar.com/dsh/blocks">Chainradar</a></li>
                                     </ul>
                                 </li>
@@ -130,11 +132,23 @@
                                 Community
                             </a>
                             <ul class="dropdown-menu">
+                                <li><a href="http://dashcointalk.ml">Dashcointalk</a></li>
                                 <li><a href="https://bitcointalk.org/index.php?topic=678232">Bitcointalk thread</a></li>
                                 <li><a href="https://bitcointalk.org/index.php?topic=804330">Bounty development fund</a></li>
                             </ul>
                         </li>
                         <!-- End Community -->
+                        <!-- Developers -->
+                        <li class="dropdown">
+                            <a href="/#community">
+                                Community
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://github.com/dashcoin/dashcoin-generator">Dashcoin generator</a></li>
+                                <li><a href="https://wiki.bytecoin.org">Bytecoin wiki</a></li>
+                            </ul>
+                        </li>
+                        <!-- End Developers -->
                     </ul>
                 </div><!--/navbar-collapse-->
             </div>    
@@ -165,56 +179,6 @@
 <p>
 <h2 class="margin-top-30"><a class="nolink">My transaction says sent, but it never showed up.</a></h2> 
 This happens when your transaction was rejected by the rest of the network.  To know for sure if it was rejected by the network, you can search Dashcoin's <a href="https://minergate.com/blockchain/dsh/blocks">block explorer on Minergate</a> for the transaction id.  If it does not show up, then it was rejected. Your coins are not lost, however, and can be recovered by waiting 24 hours, and then running the "reset" command in simplewallet. <br />
-Alternatively you can delete the blockchain and transaction pool cache by:
-<ol>
-<li>Exit your wallet and dashcoind</li>
-<li>Go to  <b>%appdata%/Roaming/dashcoin</b> on Windows, or <b>~/.dashcoin</b> on Linux or Mac OS X</li>
-<li>Delete <i>blockscache.dat</i>, <i>p2pstate.bin</i> and <i>poolstate.bin</i>.</li>
-<li>Reset your wallet</li>
-</ol>
-To prevent this in the future, you can decrease the transaction amount and/or decrease the mixin amount and increase the fee (-f parameter).
-</p> 
-
-<p>
-<h2 class="margin-top-30"><a class="nolink">My transaction returned status 'failed'.</a></h2> 
-<i>Error: transaction <xxxxxx> was rejected by daemon with status "Failed"</i><br />
-The usual cause of the problem is that your transaction has already spent inputs. You can verify that by checking for the following error in dashcoind:<br />
-<i>[P2P8]Transaction with id= <xxxxxxxx> used already spent inputs</i><br />
-This happens mostly if you made 'reset' your wallet after your transaction was rejected by the rest of the network, but you didn't waited 24 hours.
-You can fix it by:
-<ol>
-<li>Exit your wallet and dashcoind</li>
-<li>Go to  <b>%appdata%/Roaming/dashcoin</b> on Windows, or <b>~/.dashcoin</b> on Linux or Mac OS X</li>
-<li>Delete <i>blockscache.dat</i>, <i>p2pstate.bin</i> and <i>poolstate.bin</i>.</li>
-<li>Reset your wallet</li>
-</ol>
-To prevent this in the future, you can decrease the transaction amount and/or decrease the mixin amount and increase the fee (-f parameter).
-</p>
-
-<p>
-<h2 class="margin-top-30" id="too_large"><a class="nolink">Why is my transaction too large?</a></h2> 
-<i>Error: transaction <xxxx> is too big. Transaction size: xxxx bytes, transaction size limit: xxxx bytes</i><br />
-To prove you have the money to spend in the transaction, the transaction must reference the Dashcoin sent to you.  These transactions to you are called inputs.  So, if someone sends you 10 batches of 100 Dashcoin, then you have 1000 Dashcoin, and 10 inputs.  The more unused inputs you have, the larger the transactions.  How can you decrease the number of unused inputs you have?  You can send transactions to yourself.  So, if you have 10 inputs totaling 1000 DSH, and you send 1000 DSH to yourself, those 10 get used up, and now you only have 1 input: the transaction to yourself.
-</p>
-
-<p>
-<h2 class="margin-top-30"><a class="nolink">Why I cannot transfer amount bigger than 100000 (or other amount)?</a></h2> 
-This problem is related to having 'dust' in you wallet. Dust is transactions you have received with multiple small amounts (for 10 DSH).<br />
-How to fix it:<br />
-Send transactions to yourself. This will consolidate multiple small inputs into a larger ones.<br />
-<i>See also: <a href="faq#too_large">Why is my transaction too large?</a></i>
-</p>
-
-<p>
-<h2 class="margin-top-30"><a class="nolink">My transaction is in the transaction pool, but it was not included into the blockchain</a></h2> 
-Your transaction is too large and/or your transaction fee is too small.<br />
-How to fix it:<br />
-<ol>
-<li>Wait 24 hours</li>
-<li>Reset your wallet</li>
-<li>Send your transaction again with smaller amount and/or decreased the mixin amount</li>
-</ol>
-<i>See also: <a href="faq#too_large">Why is my transaction too large?</a></i>
 </p>
 
 <p>
@@ -245,6 +209,7 @@ Email support for whichever exchange you sent the coins to.  Include the transac
                     <div class="headline"><h2>Community</h2></div>  
                     <p class="margin-bottom-25 md-margin-bottom-40">
                     <a href="https://bitcointalk.org/index.php?topic=678232"><i class="fa fa-bitcoin" target="_blank"></i> Bitcointalk</a> <br />
+                    <a href="http://dashcointalk.ml/"><i class="fa fa-info-circle " target="_blank"></i> Dashcointalk</a> <br />
                     <a href="http://reddit.com/r/DashCoin/"><i class="fa fa-reddit" target="_blank"></i> Reddit</a> <br />
                     <a href="http://twitter.com/dashcoins/"><i class="fa fa-twitter" target="_blank"></i> Twitter</a> <br />
                     <a href="https://kiwiirc.com/client/irc.freenode.net/dashcoin"><i class="fa fa-comments" target="_blank"></i> IRC - #dashcoin</a> <br />
@@ -258,6 +223,8 @@ Email support for whichever exchange you sent the coins to.  Include the transac
                     <div class="headline"><h2>Resources</h2></div>  
                     <p class="margin-bottom-25 md-margin-bottom-40">
                     <a href="https://github.com/dashcoin/dashcoin"><i class="fa fa-github"></i> GitHub</a> <br />
+                    <a href="https://github.com/dashcoin/dashcoin-generator"><i class="fa fa-terminal"></i> Source generator</a> <br />
+                    <a href="https://wiki.bytecoin.org/"><i class="fa fa-code"></i> Bytecoin wiki</a> <br />
                     </p>    
                     <!-- End Resources -->                    
                 </div><!--/col-md-4-->
